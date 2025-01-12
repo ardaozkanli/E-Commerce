@@ -1,0 +1,32 @@
+.logo {
+  width: 100px;
+  height: 100px;
+  filter: invert(0);
+}
+
+.logo-text {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  padding: 5px 10px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.header-icons svg {
+  font-size: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
