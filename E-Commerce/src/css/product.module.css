@@ -1,0 +1,47 @@
+.productContainer {
+    border: 1px solid blanchedalmond;
+    border-radius: 10px;
+    box-shadow: 1px 4px 3px lightgray;
+    width: 200px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
+.productContainer:hover {
+    box-shadow: 1px 4px 3px rgb(139, 139, 139);
+    transition: all 0.2s;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productImage {
+    width: 150px;
+    height: 240px;
+}
+
+.productText {
+    text-align: center;
+}
+
+.detailBtn {
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    width: 50px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.detailBtn:hover {
+    background-color: chartreuse;
+}
