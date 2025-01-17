@@ -33,7 +33,7 @@
 }
 
 .detailBtn {
-    background-color: darkgreen;
+    background-color: black;
     color: white;
     border: none;
     width: 50px;
@@ -43,5 +43,5 @@
 }
 
 .detailBtn:hover {
-    background-color: chartreuse;
+    background-color: darkgray;
 }

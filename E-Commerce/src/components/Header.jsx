@@ -3,6 +3,7 @@ import "../css/Header.css";
 import { CiShoppingBasket } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
 import { FaRegMoon } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 function Header() {
   const [theme, setTheme] = useState(false);
   const changeTheme = () => {
@@ -17,9 +18,11 @@ function Header() {
     }
   };
 
+  const navigate = useNavigate();
+
   return (
     <div className="header-container">
-      <div className="flex-row">
+      <div className="flex-row" style={{ cursor: "pointer" }} onClick={() => navigate("/")} >
         <img
           className="logo"
           style={{ filter: theme ? "invert(1)" : "invert(0)" }}

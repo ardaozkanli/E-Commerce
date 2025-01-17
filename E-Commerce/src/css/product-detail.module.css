@@ -1,0 +1,61 @@
+.prodcutDetailContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid darkgray;
+    box-shadow: 1px 3px 4px gainsboro;
+    border-radius: 10px;
+    flex-direction: row;
+    margin: auto;
+    padding: 5px;
+}
+
+
+.productDetailImageContainer {
+    width: 300px;
+    height: 400px;
+}
+
+.productDetailTextContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    user-select: none;
+}
+
+.productDetailPrice {
+    font-weight: bold;
+}
+
+.productDetailIcons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    gap: 5px;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.productDetailIcons:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.productDetailBasketBtn {
+    width: 150px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: none;
+    margin-top: 10px;
+}
+
+.productDetailBasketBtn:hover {
+    background-color: darkgray;
+    cursor: pointer;
+    transition: all 0.3s;
+}
