@@ -4,6 +4,7 @@ import { CiShoppingBasket } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
 import { FaRegMoon } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { Badge } from "@mui/material";
 function Header() {
   const [theme, setTheme] = useState(false);
   const changeTheme = () => {
@@ -22,11 +23,16 @@ function Header() {
 
   return (
     <div className="header-container">
-      <div className="flex-row" style={{ cursor: "pointer" }} onClick={() => navigate("/")} >
+      <div
+        className="flex-row"
+        style={{ cursor: "pointer" }}
+        onClick={() => navigate("/")}
+      >
         <img
           className="logo"
           style={{ filter: theme ? "invert(1)" : "invert(0)" }}
-          src="./src/images/logo.png"></img>
+          src="./src/images/logo.png"
+        ></img>
         <p className="logo-text">Hedwigs</p>
       </div>
       <div className="flex-row">
@@ -37,7 +43,9 @@ function Header() {
           ) : (
             <FaRegMoon onClick={changeTheme} />
           )}
-          <CiShoppingBasket />
+          <Badge badgeContent={4} color="primary">
+            <CiShoppingBasket style={{ marginRight: "10px" }} />
+          </Badge>
         </div>
       </div>
     </div>
