@@ -53,7 +53,7 @@ function ProductDetails() {
         <div className={style.productDetailIcons}>
           <CiCirclePlus onClick={() => setCount(count + 1)} />
           <span>{count}</span>
-          <CiCircleMinus onClick={() => setCount(Math.max(0, count - 2))} />
+          <CiCircleMinus onClick={() => setCount(Math.max(0, count - 1))} />
         </div>
         <button onClick={addBasket} className={style.productDetailBasketBtn}>
           Add to Basket
