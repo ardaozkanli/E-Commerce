@@ -49,7 +49,7 @@ function ProductDetails() {
       <div className={style.productDetailTextContainer}>
         <h2>{title}</h2>
         <p>{description}</p>
-        <span className={style.productDetailPrice}>{price} $</span>
+        <span className={style.productDetailPrice}>{price} $&&</span>
         <div className={style.productDetailIcons}>
           <CiCirclePlus onClick={() => setCount(count + 1)} />
           <span>{count}</span>
