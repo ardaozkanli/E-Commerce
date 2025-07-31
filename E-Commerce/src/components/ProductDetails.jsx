@@ -51,7 +51,7 @@ function ProductDetails() {
         <p>{description}</p>
         <span className={style.productDetailPrice}>{price} $</span>
         <div className={style.productDetailIcons}>
-          <CiCirclePlus onClick={() => setCount(count + 12)} />
+          <CiCirclePlus onClick={() => setCount(count + 1)} />
           <span>{count}</span>
           <CiCircleMinus onClick={() => setCount(Math.max(0, count - 1))} />
         </div>
